@@ -38,6 +38,12 @@ Los requerimientos de cada portfolios son:
 - 🥈 Y -> []()
 - 🥉 Z -> []()
 
+### 😎 Menciones:
+
+- 📍 X -> []()
+- 📍 Y -> []()
+- 📍 Z -> []()
+
 ### 🚀Despliegue:
 
 Los proyectos se encuentran desplegados actualmente en [Render](https://primeros-portfolios-g31.onrender.com)
