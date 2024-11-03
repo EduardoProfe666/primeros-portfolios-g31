@@ -18,7 +18,7 @@ const experienceDetail = document.createElement('p');
 const footer = document.createElement('footer');
 const copyrightParagraph = document.createElement('p');
 
-profileImage.src = "./perfil.png";
+profileImage.src = "Muchomony/perfil.png";
 profileImage.alt = "Javier Molina Sánchez";
 nameHeading.textContent = "Javier Molina Sánchez";
 descriptionParagraph.textContent = "Estudiante de Ingeniería Informática";

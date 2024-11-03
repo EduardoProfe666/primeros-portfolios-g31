@@ -112,19 +112,24 @@ strong:hover {
 
 
 .card.winner.gold {
-   border-top: 4px solid gold;
+   border-top: 5px solid gold;
    filter: drop-shadow(0px 4px 10px rgba(255,215,0,0.5));
 }
 
 .card.winner.silver {
-   border-top: 4px solid silver;
+   border-top: 5px solid silver;
    filter: drop-shadow(0px 4px 10px rgba(192,192,192,0.5));
 }
 
 .card.winner.bronze {
-   border-top: 4px solid #cd7f32;
+   border-top: 5px solid #cd7f32;
    filter: drop-shadow(0px 4px 10px rgba(205,127,50,0.5));
 }
+
+.card.mention {
+    border-top: 5px solid aquamarine;
+    filter: drop-shadow(0px 4px 10px rgba(127,255,212,0.5));
+ }
 
 .card:hover {
    transform: translateY(-5px) scale(1.02);
