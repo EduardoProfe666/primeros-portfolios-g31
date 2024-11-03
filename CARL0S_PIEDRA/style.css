@@ -1,0 +1,187 @@
+html, a{
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.2;
+}
+html,
+body {
+    background: #403d28;
+    color: rgb(223, 233, 236, 0.80);
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+header {
+    display: flex;
+    width: 100%;
+    position:absolute;
+    top: 0em;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+
+}
+
+body {
+    padding: 0;
+    position: relative;
+    min-height: 100dvh;
+    margin: 0;
+    
+}
+
+.linkCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5f929e;
+    border-radius: 0.4em;
+    margin: 1em;
+    width: 5em;
+    height: 2em;
+    text-align: center;
+    transition: 0.4s ease;
+}
+.linkCont:hover {
+    background-color: #7fa8b1;
+}
+a{
+    margin: 0;
+    padding: 0;
+    color: #131d20;
+    font-size: 15px;
+    text-decoration: none;
+    
+}
+
+.centered{
+    padding-top: 5em;
+    padding-bottom: 5em;
+    padding-inline-start: 3rem;
+    padding-inline-end: 3rem;
+    max-width: 30rem;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+.profile{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+}
+#profilePhoto{
+    border-radius: 200em;
+    max-width: 12em ;
+    transition: 0.4s ease;
+    margin-right: 1.5em;
+}
+#profilePhoto:hover{
+    transform: scale(1.05);
+}
+
+#description {
+    align-content: center;
+}
+#description h1, .exp .descr h3, .exp .descr a{
+    color: white;
+    font-weight: 400;
+    margin-bottom: 0.15em;
+    text-align: start;
+}
+#description p{
+    margin-top: 0;
+    color: #5f929e;
+    text-align: start;
+    margin-left: 0.2em;
+}
+.sect{
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+    color: white;
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+section p{
+    font-size: 1rem;
+    color: rgb(223, 233, 236, 0.80);
+    margin-top: 0;
+    text-align: start;
+    margin-bottom: 0.15em;
+}
+.exp{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    
+}
+.exp .years{
+    align-content: center;
+}
+.exp .years p{
+    color: #5f929e;
+}
+.exp .descr{
+    margin-left: 2em;
+    width: 25em;
+}
+.exp .descr h3, .exp .descr a{
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.exp .descr p{
+    color: rgb(223, 233, 236, 0.80);
+    margin-top: 0.3em;
+}
+.exp .descr .tech{
+    margin-top: 0.3em;
+    color: rgb(223, 233, 236, 0.50);
+}
+.exp .descr a{
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+}
+.exp .descr a:hover{
+    color: #5f929e;
+}
+#arrow{
+    width: 18px;
+    height: auto;
+}
+#contact .descr{
+    margin-left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+@media (max-width: 40em) {
+    #profilePhoto {
+        width: 10em;
+        margin-right: auto;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #description h1 {
+        text-align: center;
+    }
+
+    #description p {
+        text-align: center;
+        margin-left: auto;
+    }
+    header{
+        position:absolute;
+    }
+    .exp .descr {
+        margin-left: 2em;
+        width: 20em;
+    }
+
+}

@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Para el topbar */
+        
+.navbar{
+    display: flex; /* svw y svh para dispositivos moviles (sobre todo) que el 100 abarque hasta el scroll*/
+    width: 100vw; /*  vw y vh en base a las medidas del navegador  */
+    height: 10vh; /* % en base a las medidas del padre */
+    background-color: #0F1216;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.links_navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 5vh;
+    background-color: #08BA6E;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    /* animacion para un estado*/
+    transition: 150ms ease;
+}
+.links_navbar:hover{
+    background-color: black;
+    color: white;
+    /* aumentar tam */
+    scale: 1.2;
+}
+
+/* Hasta aca para el topbar */
+
+.contenido{
+    display: none;
+}

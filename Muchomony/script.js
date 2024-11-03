@@ -1,0 +1,63 @@
+const header = document.createElement('header');
+const profileContainer = document.createElement('div');
+const profileImage = document.createElement('img');
+const nameHeading = document.createElement('h1');
+const descriptionParagraph = document.createElement('p');
+const mainContent = document.createElement('main');
+const educationSection = document.createElement('section');
+const educationHeading = document.createElement('h2');
+const educationParagraph = document.createElement('p');
+const projectsSection = document.createElement('section');
+const projectsHeading = document.createElement('h2');
+const projectsParagraph = document.createElement('p');
+const githubLink = document.createElement('a');
+const experienceSection = document.createElement('section');
+const experienceHeading = document.createElement('h2');
+const experienceParagraph = document.createElement('p');
+const experienceDetail = document.createElement('p');
+const footer = document.createElement('footer');
+const copyrightParagraph = document.createElement('p');
+
+profileImage.src = "./perfil.png";
+profileImage.alt = "Javier Molina Sánchez";
+nameHeading.textContent = "Javier Molina Sánchez";
+descriptionParagraph.textContent = "Estudiante de Ingeniería Informática";
+educationHeading.textContent = "Educación";
+educationParagraph.textContent = "Universidad Tecnológica de La Habana José Antonio Echeverría (CUJAE)";
+projectsHeading.textContent = "Proyectos";
+projectsParagraph.textContent = "Revisa mis proyectos en :";
+githubLink.textContent = "GitHub";
+githubLink.href = "https://github.com/JavierMolinaSanchez";
+githubLink.target = "_blank";
+experienceHeading.textContent = "Experiencia Laboral";
+experienceParagraph.textContent = "Diseño e implementación de una aplicación de escritorio con JavaFX :";
+experienceDetail.textContent = "- Catálogo para Olymphus Pc un local de copias en La Habana Vieja.";
+copyrightParagraph.textContent = `${new Date().getFullYear()} Javier Molina Sánchez`;
+
+profileContainer.classList.add('profile');
+educationSection.classList.add('section');
+projectsSection.classList.add('section');
+experienceSection.classList.add('section');
+experienceParagraph.classList.add("bold-text");
+
+profileContainer.appendChild(profileImage);
+profileContainer.appendChild(nameHeading);
+profileContainer.appendChild(descriptionParagraph);
+educationSection.appendChild(educationHeading);
+educationSection.appendChild(educationParagraph);
+projectsSection.appendChild(projectsHeading);
+projectsSection.appendChild(projectsParagraph);
+projectsSection.appendChild(githubLink);
+experienceSection.appendChild(experienceHeading);
+experienceSection.appendChild(experienceParagraph);
+experienceSection.appendChild(experienceDetail);
+
+footer.appendChild(copyrightParagraph);
+header.appendChild(profileContainer);
+mainContent.appendChild(educationSection);
+mainContent.appendChild(projectsSection);
+mainContent.appendChild(experienceSection);
+
+document.body.appendChild(header);
+document.body.appendChild(mainContent);
+document.body.appendChild(footer);

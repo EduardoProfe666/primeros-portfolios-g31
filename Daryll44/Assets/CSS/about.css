@@ -1,0 +1,68 @@
+/* contenido de la pagina */
+
+.tarjetas_contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.tarjeta{          
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.tarjeta p{
+    margin: 1%;
+}
+
+
+/* contenedor_sobre_mi*/
+
+.contenedor_sobre_mi{
+    display: flex;
+    justify-content: space-around;
+}
+
+.yo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.yo img{
+    /* Limite de width para la imagen */
+    width: 50%;
+}
+.yo p{
+    text-align: center;
+    /* ponerle un limite de width */
+    max-width: 95%;
+    /* para que se corte el parrafo y no siga de largo*/
+    word-wrap: break-word;
+}
+
+
+.lenguaje{
+    display: flex;
+    justify-content: space-between;
+}
+.lenguaje img{
+    width: 32px;
+    height: 32px;
+}
+
+/* Para cada navegador */
+/* mozilla */
+progress::-moz-progress-bar { background: rgb(5, 102, 5); }
+/* chrome o safari */
+progress::-webkit-progress-value { background: rgb(5, 102, 5);; }
+/* internet explorer */
+progress { color: rgb(5, 102, 5);; }
+
+progress{
+    border: 0;
+}

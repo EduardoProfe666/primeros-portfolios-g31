@@ -1,0 +1,316 @@
+/** Etiquetas basicas */
+
+* { 
+    box-sizing: border-box
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    width: 100%;
+    background-color: rgb(3, 7, 18);
+    background-image: radial-gradient(ellipse 80% 80% at 50% 30%, rgba(25, 106, 136, 0.316), rgba(255, 255, 255, 0));
+    padding: 0;
+}
+
+main {
+    padding: 4rem;
+    margin: auto;
+    width: 100%
+}
+
+section {
+    max-width: 700px;
+    margin: 0 auto 48px
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1,h2,h3 {
+    margin: 0;
+}
+
+
+h1 {
+    font-size: 30px;
+    color: rgb(255, 255, 255)
+}
+
+
+h2 {
+    margin-bottom: 8px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: rgb(250, 204, 21);
+    text-wrap: balance
+}
+
+figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto
+}
+
+span{
+    color: rgba(228, 228, 231, 0.902);
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+    font-size: .85rem;
+}
+
+footer span {
+    border-radius: 6px;
+    background: rgb(31, 41, 55);
+    color: rgb(255, 255, 255);
+    font-size: .6rem;
+    font-weight: 500;
+    padding: .2rem .6rem
+}
+
+
+time {
+    color: rgba(228, 228, 231, 0.902);
+    font-size: .85rem;
+    min-width: 102px
+}
+
+
+img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    width: 128px;
+    border-radius: 20px
+}
+
+a {
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: rgb(255, 255, 255);
+}
+
+article a:hover {
+    color: rgb(250, 204, 21)
+}
+
+article a {
+    color: rgb(255, 255, 255)
+}
+article a:hover {
+    text-decoration: underline
+}
+
+footer a {
+    color: rgba(228, 228, 231, 0.902);;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #1f2937;
+    padding: 4px;
+    height: 32px;
+    width: 32px;
+    border-radius: 6px;
+    transition: all .3s ease
+}
+
+footer a:hover {
+    background: #1f2937;
+    border: 1px solid rgb(218, 223, 228);
+}
+
+footer p {
+    color: rgba(228, 228, 231, 0.902)
+}
+
+
+/*etiquetas clases/*-----------------------------------------------*/
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem
+}
+
+
+
+/*listas*/
+
+.ul-habilidades {
+    display: inline-flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    flex-direction: row
+}
+
+.li-habilidades {
+    border-radius: 6px;
+    background: #1f2937;
+    color: rgb(255, 255, 255);
+    font-size: .8rem;
+    font-weight: 500;
+    padding: .2rem .6rem;
+    align-items: center;
+    display: flex;
+    gap: 4px
+}
+
+/*lista de lugares donde estudie, trabaje o eventos*/
+.ul-lugares {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/*lista de proyectos*/
+.ul-proyectos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-inline: -16px
+}
+
+
+
+/*parrafos*/
+
+/*Lo que sale debajo de mi nombre*/
+.p_ocupacion {
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+
+/*parrafo sobre mi*/
+.paragraph{
+    color:  rgb(255, 255, 255);
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    text-wrap: pretty
+}
+
+.p__estudio {
+    font-size: .85rem;
+    line-height: 1.2rem;
+    margin-bottom: 4px;
+    color: rgba(228, 228, 231, 0.902)
+}
+
+.descripcion__proyecto{
+    font-size: .85rem;
+    line-height: 1.2rem;
+    margin-bottom: 4px;
+    color: rgba(228, 228, 231, 0.902);
+}
+
+
+/*headers de la seccion lugares y proyectos*/
+.header_lugares {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 4px
+}
+
+.header_proyectos{
+    flex: 1 ;
+}
+
+
+.footer_redes {
+    font-size: .6rem;
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+    flex-wrap: wrap
+}
+
+
+
+.footer_tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    font-size: .6rem;
+}
+
+
+
+.article_proyectos {
+    border-radius: 8px;
+    border: 1px solid rgba(120, 118, 198, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    height: 100%
+}
+
+
+.article_lugares {
+    font-weight: 500;
+    color: rgb(255, 255, 255)
+}
+
+
+
+.enlaces_redes {
+    color: rgb(234, 179, 8);
+    font-size: .75rem;
+    min-width: 60px;
+    transition: all .3s ease
+}
+
+
+
+.h3_proyectos {
+    margin-bottom: 4px
+} 
+
+/*----------- Para responsive----------------------------------------------------------------------------------------------- */
+
+@media (width <=700px) {
+    section {
+        margin-bottom: 38px;
+        margin-inline: 30px
+    }
+
+    time {
+        text-align: right
+    }
+
+    ul {
+        margin-inline: 0px
+    }
+
+    article {
+        border: none;
+        box-shadow: 0 1px 1px rgba(120, 118, 198, 0.1);
+        padding: 0 0 16px
+    }
+
+    main {
+        padding: 0rem 1rem 1rem
+    }
+
+    .contenedor {
+        flex-direction: column-reverse;
+        padding-top: 35px
+    }
+
+}

@@ -1,0 +1,220 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Activar desplazamiento suave para toda la página */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+
+
+/* Botones de navegación */
+.navigation {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que los botones se acomoden en filas en pantallas pequeñas */
+}
+
+.nav-button {
+    padding: 0.5rem 1rem;
+    background-color: #007acc;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    
+}
+
+.nav-button:hover {
+    background-color: #005f99;
+}
+
+
+
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    color: #f0ebeb;
+    background-color: #272531;
+    font: bold;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+    font: bold;
+}
+
+/* Encabezado */
+.header {
+    text-align: center;
+    padding: 2rem 0;
+    background-color: #272531;
+    border-bottom: 1px solid #696485;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    filter: drop-shadow(0 0 10px rgba(0,0,0, .8));
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+
+/* Sección de Contenido */
+section {
+    padding: 2rem 1rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #f1f1f1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1.5rem;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.project-item {
+    background-color: #272531;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    filter: drop-shadow(0 0 10px rgba(0,0,0, .8));
+    
+}
+
+/* Imagen del proyecto */
+.project-image {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.li {
+    background-color: #272531;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+/* Sección de Tecnologías */
+.technologies {
+    padding: 1rem 0;
+    background-color: #272531;
+    text-align: center;
+}
+
+.tech-list {
+    display: grid;
+    gap: 0.1rem;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+}
+
+.tech-item {
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    width: 100px;
+    transition: transform 0.3s;
+}
+
+.tech-icon {
+    filter: drop-shadow(0 0 10px rgba(0,0,0, .8));
+    align-items: flex-end;
+    margin-bottom: 0.5rem;
+    margin-left: 1rem;
+    transition: transform 0.3s;
+}
+
+.project-image:hover, .tech-item:hover {
+    transform: scale(1.1);
+}
+
+
+/* Pie de página */
+.footer {
+    border-top: 1px solid #696485;
+    text-align: center;
+    padding: 1rem;
+    background-color: #272531#333;
+    color: #ffffff;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: #ac3a3a;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #007acc;
+}
+
+/* Responsividad */
+@media (min-width: 768px) {
+    .project-list, .experience ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .project-item, li {
+        flex: 1 1 calc(50% - 1rem);
+    }
+}
