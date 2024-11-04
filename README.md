@@ -26,11 +26,13 @@ Los requerimientos de cada portfolios son:
 - Adán el 1 -> [AdanCabrera](https://primeros-portfolios-g31.onrender.com/AdanCabrera)
 - Adrián el Monitor -> [Kvothe1992](https://primeros-portfolios-g31.onrender.com/Kvothe1992)
 - Andy Martínez -> [Andy_Mtnez](https://primeros-portfolios-g31.onrender.com/Andy_Mtnez)
+- Carlos Alberto -> [Kracklitos](https://primeros-portfolios-g31.onrender.com/Kracklitos)
 - Carlos Miguel -> [CARL0S_PIEDRA](https://primeros-portfolios-g31.onrender.com/CARL0S_PIEDRA)
 - Chistian Alberto -> [ChrisFer47](https://primeros-portfolios-g31.onrender.com/ChrisFer47)
 - Daryll Rust -> [Daryll44](https://primeros-portfolios-g31.onrender.com/Daryll44)
 - Javier -> [Muchomony](https://primeros-portfolios-g31.onrender.com/Muchomony)
 - Leyder -> [Leyderhr](https://primeros-portfolios-g31.onrender.com/Leyderhr)
+- Pedro -> [PedroKiri](https://primeros-portfolios-g-31.onrender.com/PedroKiri)
 
 ### 🏅 Ganadores
 

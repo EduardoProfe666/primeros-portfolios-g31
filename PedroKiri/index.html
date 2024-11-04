@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="PedroKiri/css/estilos.css">
+    <title>Pedro Chevalier Web</title>
+</head>
+<body>
+    <!--MENU INICIAL-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/PC/</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#educacion" onclick="seleccionar(this)">EDUCACIÓN</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#experiencia" onclick="seleccionar(this)">EXPERIENCIA</a></li>
+                        </ul>
+                    </nav>
+
+                    <!--ICONOS MENU RESPONSIVE-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="bar-solid"><img src="PedroKiri/images/icons8-menu-50.png" alt="" height="20 "></i>
+                    </div>
+
+                    <!--ICONOS REDES SOCIALES-->
+                    <div class="redes">
+                        <a href="https://www.facebook.com/pedropablo.chevalierperez" target="_blank"><img src="PedroKiri/images/icons8-facebook-50.png" alt="" height="30" class="img-redes"></a>
+                        <a href="https://www.instagram.com/kirichevalier" target="_blank"><img src="PedroKiri/images/icons8-instagram-52.png" alt="" height="30" class="img-redes"></a>
+                        <a href="https://wa.me/5358693703" target="_blank"><img src="PedroKiri/images/icons8-whatsapp-50.png" alt="" height="30" class="img-redes"></a>
+                    </div>
+
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenido</p>
+                <h2>Soy <span>Pedro Chevalier</span>, estudiante de tercer año de ingeniería informática</h2>
+                <p class="descripcion">Además de mi vida académica, disfruto de los videojuegos y la animación en 3D.
+                     He desarrollado varios proyectos en estos campos, aunque no de manera profesional</p>
+                <a href="#portfolio">Ir a Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="PedroKiri/images/Perfil.jpg" alt="">
+        </div>
+            <div class="sobremi">
+                <p class="titulo-seccion" id="miCV1">Sobre Mi</p>
+                <h2 id="miCV2">Hola, soy <span>Pedro Chevalier</span></h2>
+                <h3 id="miCV3">Estudiante, desarrollador de videojuegos</h3>
+                <p id="miCV4">Estudié en el Instituto Preuniversitario de Ciencias Exactas Vladimir Ilich Lenin, donde comencé a mostrar un interés
+                    creciente en la programación. Sin embargo, no fue hasta la pandemia del COVID-19 cuando empecé a programar de manera autodidacta.
+                    Siempre me han apasionado los videojuegos y el diseño, lo que me llevó a dedicar mis primeros proyectos a estos campos.
+                </p>
+                <p id="miCV5">Opté por estudiar Ingeniería Informática siguiendo la sugerencia de mi esposa, quien se especializa en Ciencia de la Computación.
+                    Desde el primer año de carrera, he aprovechado todos los conocimientos impartidos, manteniendo además mi enfoque autodidacta.
+                </p>
+                <p id ="miCV6">Gracias a esta metodología, he tenido la oportunidad de participar en concursos de programación competitiva y creación de videojuegos,
+                    logrando el primer lugar y menciones especiales en varias ocasiones.
+                </p>
+                <a id="descargarCV" download="miCV.txt">Descargar CV</a>
+            </div>
+    </section>
+
+
+    <!--EDUCACIÓN-->
+    <section id="educacion">
+        <h3 class="titulo-seccion">ASIGNATURAS TOMADAS</h3>
+        <div class="fila">
+
+            <div class="asignatura">
+                <img src="PedroKiri/images/icons8-code-50.png" alt="" class="icono">
+                <h4>Introducción a la Programación</h4>
+                <hr>
+                <ul class="asignatura-tag">
+                    <li>C</li>
+                    <li>Programación</li>
+                    <li>QT</li>
+                </ul>
+                <p>Asignatura introductoria a la programación, en la que se enseñan los fundamentos
+                    del lenguaje C. La herramienta principal para el estudio es Qt.
+                </p>
+            </div>
+
+            <div class="asignatura">
+                <img src="PedroKiri/images/icons8-coding-64.png" alt="" class="icono">
+                <h4>Programación Orientada a Objetos</h4>
+                <hr>
+                <ul class="asignatura-tag">
+                    <li>Java</li>
+                    <li>Programación</li>
+                    <li>Eclipse</li>
+                </ul>
+                <p>Asignatura dedicada al aprendizaje de la Programación Orientada a Objetos (POO) utilizando el lenguaje Java,
+                    complementada con otra asignatura centrada en el diseño de interfaces. Para su estudio, se utiliza principalmente
+                    el entorno de desarrollo Eclipse.
+                </p>
+            </div>
+
+            <div class="asignatura">
+                <img src="PedroKiri/images/icons8-coding-50.png" alt="" class="icono">
+                <h4>Estructuras de Datos</h4>
+                <hr>
+                <ul class="asignatura-tag">
+                    <li>Java</li>
+                    <li>Programación</li>
+                    <li>Eclipse/Intelli</li>
+                </ul>
+                <p>Asignatura enfocada en la comprensión de las estructuras de datos y su correcta utilización usando el lenguaje Java.
+                    Para el estudio, se emplea principalmente el entorno de desarrollo Eclipse, aunque también es posible usar IntelliJ.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="fila">
+
+            <div class="asignatura">
+                <img src="PedroKiri/images/icons8-graph-50.png" alt="" class="icono">
+                <h4>Matemática Numérica</h4>
+                <hr>
+                <ul class="asignatura-tag">
+                    <li>Python</li>
+                    <li>Matemática</li>
+                    <li>Excel/VScode</li>
+                </ul>
+                <p>Asignatura dedicada al aprendizaje de diferentes métodos matemáticos para la solución de problemas y la búsqueda de soluciones.
+                    Es posible usar cualquier lenguaje de programación para su desarrollo; sin embargo, Python es el más popular. Se utiliza principalmente
+                    Excel y Visual Studio Code (VSCode).
+                </p>
+            </div>
+
+            <div class="asignatura">
+                <img src="PedroKiri/images/icons8-logic-50.png" alt="" class="icono">
+                <h4>Matemática Computacional</h4>
+                <hr>
+                <ul class="asignatura-tag">
+                    <li>Prolog</li>
+                    <li>Estadística</li>
+                    <li>SWI Prolog</li>
+                </ul>
+                <p>Asignatura dedicada al estudio probabilístico y estadístico, abarcando desde el uso de listas hasta grafos y árboles, empleando
+                    el lenguaje Prolog. Para su estudio, se utiliza principalmente SWI-Prolog.
+                </p>
+            </div>
+
+            <div class="asignatura">
+                <img src="PedroKiri/images/icons8-database-50.png" alt="" class="icono">
+                <h4>Bases de Datos</h4>
+                <hr>
+                <ul class="asignatura-tag">
+                    <li>SQL/PLSQL</li>
+                    <li>Programación</li>
+                    <li>pgAdmin</li>
+                </ul>
+                <p>Asignatura enfocada en la comprensión y utilización de bases de datos utilizando SQL y PL/SQL. Para su estudio,
+                    se utiliza principalmente pgAdmin.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+                <div id="html"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Javascript</p>
+                <span class="porcentaje">60%</span>
+            </div>
+            <div class="barra">
+                <div id="js"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Java</p>
+                <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+                <div id="java"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Phyton</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="py"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="bd"></div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--Proyectos-->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="PedroKiri/images/slime.jpg" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Slimy Nortrun es un juego sencillo donde controlas a un slime que corre indefinidamente hacia la derecha a través de la nieve, mientras evitas
+                        chocar con pingüinos saltando sobre ellos. El juego fue desarrollado en Unity.</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="PedroKiri/images/slimes-pareja.png" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Lost Lovers es un encantador juego de plataformas especial para San Valentín. Controlas a un slime rojo que debe superar varios niveles recogiendo
+                        monedas para encontrarse con su pareja, el slime azul. Actualmente, el juego cuenta con 4 niveles y fue desarrollado en Godot Engine.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="PedroKiri/images/Space-Shooteroid.png" alt="">
+                <div class="info">
+                    <h4>Descripción del proyecto</h4>
+                    <p>Space Shooteroid fue mi primer gran proyecto, realizado antes de ingresar a la universidad. Se trata de un juego de disparos espaciales en el que controlas
+                        una nave equipada con cohetes y láseres, disparando a asteroides que se dividen. El juego fue desarrollado en GameMaker.</p>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="PedroKiri/images/spa.png" alt="">
+                <div class="info">
+                    <h4>Descripción del Proyecto</h4>
+                    <p>Belleza y Relajación es una aplicación que toma el mismo nombre que el spa hipotético que utilicé como proyecto de Bases de Datos en segundo año. Aunque es bastante
+                        completa, aún tiene espacio para mejoras. Se espera una actualización que podría ser parte de mi proyecto final para la asignatura de Programación Web.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--EXPERIENCIA-->
+    <section id="experiencia">
+        <div class="contenedor-foto">
+            <img src="PedroKiri/images/ANC.jpg" alt="">
+        </div>
+            <div class="experiencia">
+                <p class="titulo-seccion">Experiencia Laboral</p>
+                <h2>Trabajé un tiempo como <span>Técnico Social</span></h2>
+                <h3>Acuario Nacional de Cuba</h3>
+                <p>Tuve la oportunidad de realizar mi servicio social en el centro investigativo y recreativo que es el Acuario Nacional de Cuba,
+                    ubicado en La Habana, Playa. Desde temprana edad tuve gran acceso al centro por mi familia y lo conozco bien. Las labores de un
+                    técnico social en la institución van desde atender y guiar al público hasta gestionar la venta de interacciones con mamíferos marinos.
+                    A pesar de que mi cargo era únicamente este, realicé muchas más tareas en el centro. Fui DJ, recepcionista de eventos, guía y también
+                    estuve al frente de dos proyectos: uno para el mantenimiento de la página web del centro y otro para la restauración del teatro.
+                </p>
+                <p>Durante mi estancia en la institución, aprendí sobre servicio al cliente, mezcla de sonido, toma de decisiones bajo incertidumbre,
+                    gestión y administración. Además, en mis tiempos libres estudiaba Python. Tanto tiempo trabajando con el público me permitió desarrollar
+                    habilidades tratando con la gente y analizando situaciones, por lo que estoy considerando darle una oportunidad al campo de la  analítica.
+                </p>
+                <a href="https://es-la.facebook.com/acuarionacional/about/" target="_blank">Página de Facebook del ANC</a>
+            </div>
+    </section>
+
+
+    <!--FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2024</p>
+        <div class="redes">
+            <a href="#"><img src="PedroKiri/images/icons8-facebook-50.png" alt="" height="30" class="img-redes"></a>
+            <a href="#"><img src="PedroKiri/images/icons8-instagram-52.png" alt="" height="30" class="img-redes"></a>
+            <a href="#"><img src="PedroKiri/images/icons8-whatsapp-50.png" alt="" height="30" class="img-redes"></a>
+        </div>
+    </footer>
+
+    <script src="PedroKiri/scripts/script.js"></script>
+
+</body>
+
+</html>
