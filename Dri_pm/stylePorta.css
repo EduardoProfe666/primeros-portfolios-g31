@@ -1,0 +1,541 @@
+*{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    /*Me permite deslizarme cuando hago clic en el menu*/
+    scroll-behavior: smooth;
+}
+
+/*Menu*/
+.div1{
+    background: #291248;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.div1 header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.div1 header .logo a{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: #a999c6;
+    text-decoration: none;
+}
+
+.div1 header ul{
+    display: flex;
+    list-style: none;
+}
+
+.div1 header nav ul li a{
+    color: #fff;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.div1 header nav ul li a:hover{
+    color: #a999c6;
+}
+
+.nav_responsive{
+    background-color: #a999c6;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/*Inicio*/
+.inicio{
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+    url(Foto/FM.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.inicio .div2{
+    padding: 20px;
+    background-color: #291248;
+    max-width: 350px;
+    margin: auto;
+    text-align: center;
+    border-radius: 40px;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+}
+
+.inicio .div2 .div_img img{
+    margin-top: 40px;
+    border: 10px solid #a999c6;
+    display: block;
+    margin: auto;
+    border-radius: 100%;
+}
+
+.inicio .div2 .redes a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.sobremi{
+    background-color: #291248;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.sobremi .div3{
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.sobremi h2{
+    font-size: 35px;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 10px;
+}
+
+.sobremi .div3{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+}
+
+.sobremi .div3 p span{
+    color: #a999c6;
+    font-weight: bold;
+}
+
+.sobremi .fila{
+    display: flex;
+}
+
+.sobremi .fila .col{
+    width: 50%;
+}
+
+.sobremi .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+
+.sobremi .fila .col ul{
+    list-style: none;
+}
+
+.sobremi .fila .col ul li{
+    margin: 12px 0;
+}
+
+.sobremi .fila .col ul li strong{
+    display: inline-block;
+    color: #a999c6;
+    width: 130px;
+}
+
+.sobremi .fila .col ul li span{
+    background-color: #a999c6;
+    padding: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.sobremi .fila .col .div_interes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobremi .fila .col .div_interes .intereses{
+    width: 110px;
+    height: 110px;
+    background-color: #a999c6;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+    color: black;
+}
+
+.sobremi .fila .col .div_interes .intereses:hover{
+    background-color: #de83c8;
+}
+
+.sobremi .fila .col .div_interes .intereses i{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    align-items: center;
+}
+
+
+.sobremi button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: .1;
+    transition: 1s;
+}
+
+.sobremi button:hover{
+    background-color: #6c5a84;
+}
+
+.habilidades{
+    background-color: #402b5c;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.habilidades .div4{
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.habilidades h2{
+    font-size: 35px;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.habilidades .fila{
+    display: flex;
+}
+
+.habilidades .div4 .fila .col{
+    width: 50%;
+    padding: 0 20px;
+}
+
+
+.habilidades .div4 .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.habilidades .habi > span{
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.habilidades .habi .barra{
+    height: 8px;
+    width: 80%;
+    background-color: #291248;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.habilidades .habi .progreso{
+    background-color: #a999c6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+}
+
+.habilidades .habi .barra span{
+position: absolute;
+height: 35px;
+width: 35px;
+background-color: #a999c6;
+border-radius: 45px;
+line-height: 40px;
+text-align: center;
+top: -17px;
+right: -15px;
+font-size: 14px;
+}
+
+/*Clases dinaminas con js*/
+.habilidades .habi .c{
+    width: 0%;
+    animation: 2s c forwards;
+}
+@keyframes c{
+    0%{width: 0%;}
+    100%{width: 85%;}
+}
+
+.habilidades .habi .java{
+    width: 0%;
+    animation: 2s java forwards;
+}
+@keyframes java{
+    0%{width: 0%;}
+    100%{width: 89%;}
+}
+
+.habilidades .habi .python{
+    width: 0%;
+    animation: 2s python forwards;
+}
+@keyframes python{
+    0%{width: 0%;}
+    100%{width: 75%;}
+}
+
+.habilidades .habi .htmlcss{
+    width: 0%;
+    animation: 2s htmlcss forwards;
+}
+@keyframes htmlcss{
+    0%{width: 0%;}
+    100%{width: 65%;}
+}
+
+.habilidades .habi .javascript{
+    width: 0%;
+    animation: 2s javascript forwards;
+}
+@keyframes javascript{
+    0%{width: 0%;}
+    100%{width: 32%;}
+}
+
+.habilidades .habi .comunicacion{
+    width: 0%;
+    animation: 2s comunicacion forwards;
+}
+@keyframes comunicacion{
+    0%{width: 0%;}
+    100%{width: 90%;}
+}
+
+.habilidades .habi .trabajoenequipo{
+    width: 0%;
+    animation: 2s trabajoenequipo forwards;
+}
+@keyframes trabajoenequipo{
+    0%{width: 0%;}
+    100%{width: 87%;}
+}
+
+.habilidades .habi .creatividad{
+    width: 0%;
+    animation: 2s creatividad forwards;
+}
+@keyframes creatividad{
+    0%{width: 0%;}
+    100%{width: 25%;}
+}
+
+.habilidades .habi .dedicacion{
+    width: 0%;
+    animation: 2s dedicacion forwards;
+}
+@keyframes dedicacion{
+    0%{width: 0%;}
+    100%{width: 77%;}
+}
+
+
+/*Formacion*/
+.formacion{
+    background-color: #291248;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.formacion .div5{
+    max-width: 1100px;
+    margin: auto;
+
+}
+
+.formacion h2{
+    font-size: 35px;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.formacion .fila{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.formacion .fila .col{
+    width: 49%;
+    padding: 0 20px;
+}
+
+.formacion .div5 .fila .col h3{
+    font-size: 28px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    margin: 10px;
+}
+
+.formacion .fila .col_izq{
+    padding: 20px;
+    background-color: #402b5c;
+    max-width: 500px;
+    margin: auto;
+    margin-left: 0;
+    text-align: center;
+    border-radius: 40px;
+    border: 2px solid #a999c6;
+}
+.formacion .fila .col_dere{
+    padding: 20px;
+    background-color: #402b5c;
+    max-width: 500px;
+    margin: auto;
+    margin-right: 80px;
+    text-align: center;
+    border-radius: 40px;
+    border: 2px solid #a999c6;
+}
+.formacion .div5 #imgF{
+   margin-left: 500px;
+    margin-top: 60px;
+}
+
+
+footer{
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+    url(Foto/FM.jpg);
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .3s;
+}
+
+footer .arriba{
+    display: block;
+    width: 70px;
+    height: 60px;
+    background-color: #6c5a84;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+
+/*Responsive*/
+@media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav_responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #6c5a84;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px){
+    .sobremi .fila{
+        display: block;
+    }
+    .sobremi .fila .col{
+        width: fit-content;
+    }
+
+    .habilidades .fila{
+        display: block;
+    }
+
+    .habilidades .fila .col{
+        width: 100%;
+    }
+
+    .habilidades .fila .col .barra{
+        width: 100%;
+    }
+
+    .formacion .fila{
+        display: block;
+    }
+
+    .formacion .fila .col_dere{
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+    }
+    .formacion .fila .col_dere img{
+        height: 130px;
+    }
+
+    .formacion .div5 #imgF{
+        margin-left: 215px;
+    }
+}
