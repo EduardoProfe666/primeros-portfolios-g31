@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal Andy Clemente</title>
+    <link rel="stylesheet" href="andy_clemente/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <a href="#" class="logo">Portafolio.</a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+        <ul class="menu">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#" onclick="alert('Saldría otra página')">About</a></li>
+            <li><a href="#" onclick="alert('Saldría otra página')"> Service</a></li>
+            <li><a href="mailto:andyclmentegago@gmail.com">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="bars-animation">
+        <div class="bar" style="--i:6;"></div>
+        <div class="bar" style="--i:5;"></div>
+        <div class="bar" style="--i:4;"></div>
+        <div class="bar" style="--i:3;"></div>
+        <div class="bar" style="--i:2;"></div>
+        <div class="bar" style="--i:1;"></div>
+    </div>
+
+    <section class="home">
+        <div class="info home-info">
+            <h1>Andy Clemente</h1>
+            <h2>Soy
+                <span style="--i:1" data-text="Diseñador">Diseñador</span>
+                <span style="--i:2" data-text="Fotógrafo">Fotógrafo</span>
+                <span style="--i:3" data-text="Programador">Programador</span>
+            </h2>
+
+            <p>Soy un estudiante de la Universidad Tecnológica de la Habana Jose Antonio Echeverría en 3er año
+                de la Carrera de Ingeniería Informática, tengo habilidades de desarrollo de software, fotografía y
+                diseño.
+            </p>
+            <div class="btn-sci">
+                <button onclick="downloadFile()" class="btn">Descargar CV</button>
+                <div class="sci">
+                    <a href="https://github.com/AndyCG03" target="_blank"><img src="andy_clemente/img/github-logo-24.png"
+                            alt="github"></a>
+                    <a href="https://x.com/AndyClemente6?t=5BUFC3IoAZ13OzlSUUeVIg&s=09" target="_blank"><img
+                            src="andy_clemente/img/x-regular-24.png" alt="X"></a>
+                    <a href="https://www.instagram.com/clemen_lens?igsh=ZGg2eDEycnUxYnRl" target="_blank"><img
+                            src="andy_clemente/img/instagram-logo-24.png" alt="instagram"></a>
+                    <a href="https://www.linkedin.com/in/andy-clemente-7590362a4?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="blank"><img src="andy_clemente/img/linkedin-logo-24.png" alt="linkedin"></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="andy_clemente/img/FotoElegante.png" alt="foto-perfil">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="education">
+
+        <div class="education-content">
+            <h2>Educación</h2>
+            <ul>
+                <li>Programación Dinámica</li>
+                <li>Programación Orientada a Objetos</li>
+                <li>Estructuras de Datos</li>
+                <li>Diseño de Interfaces y Pruebas</li>
+                <li>Base de Datos</li>
+                <li>Desarrollo de Videojuegos</li>
+            </ul>
+        </div>
+
+        <div class="some-projects">
+            <h2>Proyectos</h2>
+            <ul>
+                <li><a href="#" onclick="alert('Pendiente a subir')" target="_blank">Proyecto de DPOO</a></li>
+                <li><a href="https://github.com/cStoneDev/ProyectoRutas" target="_blank">Proyecto de ED</a></li>
+                <li><a href="https://github.com/AndyCG03/ASIJAE" target="_blank">Proyecto Optativa de Python</a></li>
+                <li><a href="https://github.com/cStoneDev/refugio_animales" target="_blank">Proyecto de BD</a></li>
+                <li><a href="#" onclick="alert('Pendiente a subir')" target="_blank">Game Jam 2024</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <script src="andy_clemente/script.js"></script>
+
+</body>
+
+</html>

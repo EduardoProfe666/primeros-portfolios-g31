@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html class="client-nojs" lang="en" dir="ltr">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Hoja de estilo -->
+
+<style>
+    body    /* Color general de fondo y tamaño de letra*/
+    {
+        font-size: medium;
+        color: white;
+        background-color: rgb(24, 24, 24) ;
+    }
+        /* Estos tres son para alinear más fácilmente objetos*/
+    .centercenter
+    {text-align: center;}
+
+    .centerright
+    {text-align: right;}
+
+    .centerleft
+    {text-align: left;}
+
+    td  /* Celdas de tablas */
+    {
+        border: 1px solid;
+        border-radius: 0.5vw;
+        border-color: rgb(46, 75, 97);
+        background-color: rgb(46, 75, 97);
+        vertical-align: top;
+    }
+
+    .fondotransparente /* Lo dice el nombre*/
+    {
+        background-color: rgba(0, 0, 0, 0);
+        border: 0px;
+    }
+
+        /* Referido a cada una de las tres áreas principales de la tabla */
+        /* El tamaño del área del nombre es el ancho de datos más el de la biografía*/
+    .anchodatos
+    {width: 40vw}
+
+    .anchobiografia
+    {width: 30vw}
+
+    .anchofoto
+    {width: 30vw}
+
+</style>
+    <!-- Encabezado -->
+<head> <h1 class="centercenter"> Portafolio </h1> </head>
+
+<body>
+
+    <table>
+            <!-- Foto -->
+        <td class="fondotransparente", rowspan="2">
+            <img src="Jonathan/foto.png" , alt="Esto es una foto", class="anchofoto">
+        </td>
+            <!-- Nombre -->
+        <td class="centercenter", colspan="2" , height = 10px , class="anchofoto">
+            <h1> Jonathan David Gonz&aacute;lez Pereda</h1>
+        </td>
+        <tr>
+                <!-- Biografía -->
+            <td class="anchobiografia">
+                Nacido en Cuba, actualmente estudiando en la CUJAE para ser Ingeniero inform&aacute;tico. Ve pel&iacute;culas con frecuencia y de vez en cuando lee libros. Con regularidad suele creerse m&aacute;s b&aacute;rbaro de lo que realmente es.
+            </td>
+                <!-- Datos adicionales -->
+            <td class="anchodatos">
+                <h2 class="centercenter" id="h2educacion">Educaci&oacute;n</h2>
+                    <ul id="listaeducacion">
+                        <li> Prescolar Benito Ju&aacute;rez </li>
+                        <li> Primaria Benito Ju&aacute;rez </li>
+                        <li> Primaria Ra&uacute;l G&oacute;mez Garc&iacute;a </li>
+                        <li> Secundaria Jose Antonio Echeverr&iacute;a </li>
+                        <li> Secundaria Julio Antionio Mella </li>
+                        <li> Preuniversitario  Manolito Aguiar</li>
+                        <li> Universidad CUJAE</li>
+                    </ul> <br>
+                <h2 class="centercenter" id="h2proyectos">Proyectos</h2>
+                    <ul id="listaproyectos">
+                        <li>Aprobar semestre actual</li>
+                        <li>Terminar reto de programaci&oacute;n Web</li>
+                    </ul> <br>
+                <h2 class="centercenter" id="h2explaboral">Experiencia Laboral</h2>
+                <ul id="listaexplaboral">
+                    <li>Barbero en Groenlandia, el negocio se fue en quiebra debido a que a los esquimales no les crece barba</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <script>    /* Adicionar funcionalidad de esconder o mostrar */
+
+            /* Obtener Encabezados*/
+        h2lista = [ document.getElementById("h2educacion") , document.getElementById("h2proyectos") , document.getElementById("h2explaboral") ]
+            /* Las respectivas listas de cada encabezado */
+        listalista = [ document.getElementById("listaeducacion"), document.getElementById("listaproyectos") , document.getElementById("listaexplaboral") ]
+
+            /* Permite mostrar o esconder un objeto en dependencia de su estado */
+        function escondermostrar(objeto)
+        {
+            if (objeto.style.display === "none")
+                {   objeto.style.display = "block"  }
+            else
+                {   objeto.style.display = "none"}
+        }
+
+            /* Dados dos listas ir agregando la funcionalidad de
+            esconder los elementos de la segunda al hacer clic en la primera*/
+        function auxiliar(h2lista , listalista)
+        {
+                /* Obtener tamaño de la primera lista*/
+            tamano = h2lista.length;
+            for (let cuenta = 0 ; cuenta <= tamano ; ++cuenta )
+            {
+                    /*Agregar evento a la primera con respecto al mismo índice de la segunda*/
+                h2lista[cuenta].addEventListener("click", () => escondermostrar( listalista[cuenta] ) );
+                    /*Cambiar el ícono al poner el ratón encima*/
+                h2lista[cuenta].addEventListener("mouseover", () => { h2lista[cuenta].style.cursor = 'pointer'; } )
+                    /*Agregar a la primera este texto*/
+                h2lista[cuenta].textContent += " (Esconder / Mostrar)";
+            }
+        }
+            /* Llamar al método */
+        auxiliar(h2lista, listalista)
+
+    </script>
+
+</body>
+</html>
