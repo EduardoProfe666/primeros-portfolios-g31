@@ -23,6 +23,7 @@ Los requerimientos de cada portfolios son:
 
 ### 👻 Participantes:
 
+- Abdiel -> [](https://primeros-portfolios-g31.onrender.com/GodKiller_Gray030730)
 - Adán el 1 -> [AdanCabrera](https://primeros-portfolios-g31.onrender.com/AdanCabrera)
 - Adriana -> [Dri_pm](https://primeros-portfolios-g31.onrender.com/Dri_pm)
 - Adrián el Monitor -> [Kvothe1992](https://primeros-portfolios-g31.onrender.com/Kvothe1992)
