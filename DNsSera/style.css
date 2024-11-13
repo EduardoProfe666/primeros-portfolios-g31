@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #081b29;
+    color: #ededed;
+}
+
+.home {
+    height: 90%;
+    display: grid;
+    place-items: center;
+    padding: 2% 3% 0% 3%;
+
+    h1 {
+        font-size: 45px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 1.2;
+        color: #00abf0;
+    }
+}
+
+.image{
+    display: grid;
+    place-items: center;
+
+    img{
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+        margin-bottom: 5%;
+    }
+}
+
+.home-content {
+    max-width: 800px;
+
+    p {
+        text-align: justify;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 20px 0 40px;
+    }
+}
+
+.home-content .btn-box {
+    display: flex;
+    justify-content: space-evenly;
+    height: auto; 
+    width: 100%;
+    padding: 20px 10px;
+
+    a { 
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 150px;
+        width: 30%;
+        height: 50px;
+        margin: 5px;
+        background: #081b29;
+        border: 2px solid #00abf0;
+        border-radius: 8px;
+        font-size: 90%;
+        color: #00abf0;
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        z-index: 1;
+        overflow: hidden;
+        transition: .5s;
+    }
+
+    a:hover{
+        color: #081b29;
+    }
+
+    a::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #00abf0; 
+        z-index: -1;  
+        transition: .5s;
+    }
+
+    a:hover::before{
+        width: 100%;
+    }
+}
+
+.proyect-container{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+    text-align: center;
+
+    p{
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 800px;
+    margin: 20px auto;
+    border: 1px solid #00abf0;
+    border-radius: 8px;
+}
+
+.tec-container{
+    width: calc(15% - 10px);
+    margin: 10px;
+    text-align: center;
+
+    img{
+        width: 50%;
+        border-radius: 8px;
+    }
+}
+
+footer{
+    display: grid;
+    place-items: center;
+
+    h3{
+        font-size: 95%;
+        font-weight: 500;
+        line-height: 1.2;   
+        text-align: center; 
+    }
+}

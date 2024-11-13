@@ -1,0 +1,111 @@
+html , body{
+    background: #333 ; 
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.textoColor{
+    color: aliceblue ; 
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    margin-top: 0;
+}
+
+h2{
+  margin: auto;
+  text-align: center;
+  margin: 2% 0 ;
+}
+
+.padreDiv{
+    margin: auto; 
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 40%;
+    height: 20%;
+}
+
+.itemFlex{
+    margin: 5%;
+    width: 100%;
+    
+}
+
+.elementos{
+    display:flex;
+    flex-flow:row;
+}
+
+img{
+    margin-top: 5%;
+   width: 100%;
+   height: 80%;
+   max-width: inherit;
+   max-height: inherit;
+}
+
+.contexto{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin: 0 15% 1% 15%; 
+}
+h3{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+p{
+    text-align:center;
+}
+
+footer{
+    background: #141414;
+}
+
+nav{
+    position: fixed;
+    margin-top: 5%;
+    top:20px ; 
+}
+
+ul{
+    position: sticky;
+    top:20px
+}
+
+li{
+    text-decoration: none;
+    list-style: none;
+    left: 5px;
+}
+
+#pieContacto{
+    margin: 0 0 0 50px;
+    text-align: center;
+    color: whitesmoke;
+}
+
+footer{
+    margin: 0 0 0 0 ;
+    padding: 40px;
+    text-align: center;
+    color: rgba(188, 177, 177, 0.885);
+}
+h4{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+a{
+    color: black;
+}
