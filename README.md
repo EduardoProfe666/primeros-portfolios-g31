@@ -23,7 +23,7 @@ Los requerimientos de cada portfolios son:
 
 ### 👻 Participantes:
 
-- Abdiel -> [](https://primeros-portfolios-g31.onrender.com/GodKiller_Gray030730)
+- Abdiel -> [GodKiller_Gray030730](https://primeros-portfolios-g31.onrender.com/GodKiller_Gray030730)
 - Adán el 1 -> [AdanCabrera](https://primeros-portfolios-g31.onrender.com/AdanCabrera)
 - Adriana -> [Dri_pm](https://primeros-portfolios-g31.onrender.com/Dri_pm)
 - Adrián el Monitor -> [Kvothe1992](https://primeros-portfolios-g31.onrender.com/Kvothe1992)
@@ -42,15 +42,15 @@ Los requerimientos de cada portfolios son:
 
 ### 🏅 Ganadores
 
-- 🥇 X -> []()
-- 🥈 Y -> []()
-- 🥉 Z -> []()
+- 🥇 X -> [PedroKiri](https://primeros-portfolios-g-31.onrender.com/PedroKiri)
+- 🥈 Y -> [Kracklitos](https://primeros-portfolios-g31.onrender.com/Kracklitos)
+- 🥉 Z -> [Daryll44](https://primeros-portfolios-g31.onrender.com/Daryll44)
 
 ### 😎 Menciones:
 
-- 📍 X -> []()
-- 📍 Y -> []()
-- 📍 Z -> []()
+- 📍 X -> [GodKiller_Gray030730](https://primeros-portfolios-g31.onrender.com/GodKiller_Gray030730)
+- 📍 Y -> [Kvothe1992](https://primeros-portfolios-g31.onrender.com/Kvothe1992)
+- 📍 Z -> [andy_clemente](https://primeros-portfolios-g31.onrender.com/andy_clemente)
 
 ### 🚀Despliegue:
 
